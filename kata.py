@@ -13,8 +13,6 @@ def add(a_str):
             for value in num:
                 another_list.append(int(value))
         for num in another_list:
-            ret_num += int(num)
+            if num <= 1000:
+                ret_num += int(num)
         return ret_num
-
-if __name__ == "__main__":
-    print(add("1\n2,3"))

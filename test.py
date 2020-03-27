@@ -20,3 +20,7 @@ def test():
     # hluti 5
     assert add("1\n2,3") == 6
     assert add("1\n2\n3") == 6
+
+    # hluti 6
+    assert add("1000, 2, 3, 1001") == 1005
+    assert add("200, 1001, 1001, 10000") == 200
