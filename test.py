@@ -11,3 +11,8 @@ def test():
     # hluti 3
     assert add("1,2") == 3
     assert add("10,20") == 30
+
+    # hluti 4
+    assert add("1,2,3,4,5") == 15
+    assert add("10,2,5,22,1,1") == 41
+    assert add("10,10,10,10,10") == 50
