@@ -29,3 +29,7 @@ def test():
     assert add("-1\n-2\n3\n-2") == "Negatives not allowed:-1,-2,-2"
     assert add("2\n-3,-2,1") == "Negatives not allowed:-3,-2"
     assert add("1,-1,2,-2,-3\n-3") == "Negatives not allowed:-1,-2,-3,-3"
+
+    # hluti 8
+    assert add("//X\n1X2") == 3
+    assert add("//&\n1&2&3") == 6
