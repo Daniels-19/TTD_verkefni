@@ -24,3 +24,8 @@ def test():
     # hluti 6
     assert add("1000, 2, 3, 1001") == 1005
     assert add("200, 1001, 1001, 10000") == 200
+
+    # hluti 7
+    assert add("-1\n-2\n3\n-2") == "Negatives not allowed:-1,-2,-2"
+    assert add("2\n-3,-2,1") == "Negatives not allowed:-3,-2"
+    assert add("1,-1,2,-2,-3\n-3") == "Negatives not allowed:-1,-2,-3,-3"

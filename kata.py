@@ -13,6 +13,10 @@ def add(a_str):
             for value in num:
                 another_list.append(int(value))
         for num in another_list:
-            if num <= 1000:
+            if num < 0 and str(ret_num).isdigit():
+                ret_num = "Negatives not allowed:{}".format(str(num))
+            elif num < 0:
+                ret_num += ",{}".format(str(num))
+            elif num <= 1000 and str(ret_num).isdigit():
                 ret_num += int(num)
         return ret_num
